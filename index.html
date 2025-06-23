@@ -21,10 +21,10 @@
 <body>
   <canvas id="riveCanvas"></canvas>
 
-  <!-- ✅ GitHub Pages 호환되는 방식 -->
+  <!-- ✅ 올바르게 수정된 Rive 불러오기 -->
   <script src="https://unpkg.com/rive-js@2.6.5/dist/rive.min.js"></script>
   <script>
-    const rive = new rive.Rive({
+    const riveInstance = new rive.Rive({
       src: 'cherrybomb.riv',
       canvas: document.getElementById('riveCanvas'),
       autoplay: true
