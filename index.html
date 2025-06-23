@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>CherryBomb</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+    }
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="riveCanvas"></canvas>
+  <script type="module">
+    import Rive from 'https://cdn.skypack.dev/rive-js';
+
+    const rive = new Rive({
+      src: 'cherrybomb.riv',
+      canvas: document.getElementById('riveCanvas'),
+      autoplay: true
+    });
+  </script>
+</body>
+</html>
+
